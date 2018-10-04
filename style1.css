@@ -1,0 +1,101 @@
+/*---------------- BASIC SETUP -----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* CSS PROPERTIES FOR THE HTML ELEMENT */
+html{
+    background-color: #ffffff;
+    color: #e9e3e3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+}
+/*---------- REUSABLE COMPONENTS ---------*/
+h3 {
+    margin-top: 0%;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 110%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+section {
+    padding: 80px 0;
+
+}
+
+/*-------ICON-------------*/
+.icon-big {
+    font-size: 180%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/*---------- HEADER -----------*/
+header {
+    background-image:linear-gradient(hsla(0, 0%, 11%, 0.705), hsla(0, 0%, 0%, 0.705)), url(img/friends.jpg); /*
+   THE LINEAR-GRADIENT IS TO ADD A COLOR TRANSITION BETWEEN 2 COLORS OVER THE BACKGROUND IMAGE */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+}
+
+.main-nav {
+    float: right;
+    margin-top: 55px;
+    margin-right: 50px;
+    list-style: none;
+
+}
+
+/*----LIST Tag Properties----*/
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+
+} 
+
+.main-nav li a:link,
+.main-nav li a:visited
+ {
+     padding: 5px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;  /* GIVEN THE BASE FONT SIZE IN PIXEL, FOR SUBSEQUENT FONTS, 
+    MAKE THEM PERCENTAGES OF THE BASE FONT (which will be declared in the html element)*/
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid  #d8890b;
+    
