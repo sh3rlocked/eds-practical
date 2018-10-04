@@ -1,0 +1,132 @@
+/*---------------- BASIC SETUP -----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* CSS PROPERTIES FOR THE HTML ELEMENT */
+html{
+    background-color: #ffffff;
+    color: #e9e3e3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+}
+/*---------- REUSABLE COMPONENTS ---------*/
+h1 {
+    margin-top: 0%;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 280%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+/*------- BUTTONS -------*/
+
+/*THE BTN SUBCLASS USED IN THE FOLLOWING CASES ARE LINK, VISITED, ACTIVE, HOVER */
+.btn:link,
+.btn:visited {
+    display: inline-block; /*THE INLINE-BLOCK PROPERTY IS SO THAT THE PADDING AND MARGIN OF THE CONTENT CAN BE ADJUSTED */
+    padding: 10px 30px;
+    margin: 0px 5px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s ; /*THE TRANSITION PROPERTY I USED ENSURES THAT THE BUTTONS DONT 
+    JUST TURN GREEN INSTANTLY, THERE IS A 0.2 SECOND DELAY*/
+    
+   }
+
+
+.btn-full:link,
+.btn-full:visited{
+background-color: #f39c12;
+border: 1px solid #f39c12;
+color: #fff; 
+margin-right: 15px; /* THE MARGIN-RIGHT SEPERATES THE BUTTON ELEMENT TO THE RIGHT */
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #f39c12;
+    color: #f39c12;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: #d8890b;
+}
+
+.btn-full:hover,
+.btn-full:active {
+border: 1px solid #d8890b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #d8890b;
+    color: #fff;
+}
+
+/*---------- HEADER -----------*/
+header {
+    background-image:linear-gradient(hsla(0, 0%, 11%, 0.705), hsla(0, 0%, 0%, 0.705)), url(img/friends.jpg); /*
+   THE LINEAR-GRADIENT IS TO ADD A COLOR TRANSITION BETWEEN 2 COLORS OVER THE BACKGROUND IMAGE */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+}
+
+.main-nav {
+    float: right;
+    margin-top: 55px;
+    margin-right: 50px;
+    list-style: none;
+
+}
+
+/*----LIST Tag Properties----*/
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+
+} 
+
+.main-nav li a:link,
+.main-nav li a:visited
+ {
+     padding: 5px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;  /* GIVEN THE BASE FONT SIZE IN PIXEL, FOR SUBSEQUENT FONTS, 
+    MAKE THEM PERCENTAGES OF THE BASE FONT (which will be declared in the html element)*/
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid  #d8890b;
+    
